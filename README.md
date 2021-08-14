@@ -61,8 +61,35 @@ h1 ~ h6 " 제목태그 ( h -> heading)
 
 https://www.w3schools.com/html/html_paragraphs.asp
 
+### HTML Link
 
+https://www.w3schools.com/html/html_links.asp
 
+a : anchor 
+
+> URL(Uniform Resource Locator) : 파일식별자 (위치표시) ,  가장 넓은 의미의 인터넷 주소를 의미
+> 인터넷 주소
+> IP (Internet Protocol) " 숫자로 구성된 주소(192.168.0.1)  
+> Domain Name : www.naver.com DNS(Domain Name Server)
+> Ex) blog.naver.com/blog/1234 => URL
+
+### HTML File 경로
+
+https://www.w3schools.com/html/html_filepaths.asp
+
+절대 vs 상대 
+- 경로 위치 표시 방식
+- 경로 표시 기준의 변경 여부
+
+- 절대 경로 방식
+- Ex) 대한민국 서울특별시 ~~ 대호 빌딩 8층
+- 출발지 위치에 상관없이 항상 찾아갈 수 있도록 표시
+- Ex) 도메인주소 / 상세경로 => https://www.naver.com/blog/image.jpg
+
+- 상대 경로 방식
+- Ex) 강남역 11번 출구에서 3분 걸어오면 대호빌딩
+- 출발지 위치를 기준으로 표시
+- Ex) 상세경로 => /blog/image.jpg || image.jpg
 
 
 
