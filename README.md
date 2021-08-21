@@ -5,6 +5,9 @@ https://www.w3schools.com/default.asp
 
 https://codesandbox.io/dashboard/all/
 
+https://github.com/edu-ministori/frontend_08
+강사님 github link
+
 ## HTML
 
 ### Introduction 
@@ -90,6 +93,28 @@ https://www.w3schools.com/html/html_filepaths.asp
 - Ex) 강남역 11번 출구에서 3분 걸어오면 대호빌딩
 - 출발지 위치를 기준으로 표시
 - Ex) 상세경로 => /blog/image.jpg || image.jpg
+
+### HTML List
+
+https://www.w3schools.com/html/html_lists.asp
+
+>중첩목록(Nested List)
+
+
+
+### HTML Table
+
+https://www.w3schools.com/html/html_tables.asp
+ 
+table generator: https://www.tablesgenerator.com/html_tables
+
+
+
+
+
+<ul class="ulist">
+ <ol class="ulist">
+  ul ol태그 숫자 점 없애기
 
 
 
