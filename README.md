@@ -6,7 +6,9 @@ https://www.w3schools.com/default.asp
 https://codesandbox.io/dashboard/all/
 
 https://github.com/edu-ministori/frontend_08
-강사님 github link
+https://codesandbox.io/s/itac-08-0ye9v?file=/index.html
+
+강사님 github codesandbox link
 
 ## HTML
 
