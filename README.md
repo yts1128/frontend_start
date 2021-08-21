@@ -108,6 +108,26 @@ https://www.w3schools.com/html/html_tables.asp
  
 table generator: https://www.tablesgenerator.com/html_tables
 
+### HTML Images
+
+https://www.w3schools.com/html/html_images.asp
+
+alt = alternative
+
+### HTML Video
+
+https://www.w3schools.com/html/html5_video.asp
+
+video attribute
+controls = 재생 일시정지 기능
+autoplay = 자동재생
+muted = 소리 없앰
+loop = 반복
+
+### HTML Youtube
+
+https://www.w3schools.com/html/html_youtube.asp
+
 
 
 
