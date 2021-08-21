@@ -137,6 +137,6 @@ https://www.w3schools.com/html/html_youtube.asp
   ul ol태그 숫자 점 없애기
 
   
-  https://freebiesbug.com/psd-freebies/piroll-design-template-agencypersonal-portfolio/
+https://freebiesbug.com/psd-freebies/piroll-design-template-agencypersonal-portfolio/
 https://www.photopea.com/
 
