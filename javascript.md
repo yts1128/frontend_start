@@ -65,6 +65,16 @@ https://www.w3schools.com/js/js_const.asp
 
 > ES5버젼에서는 일반변수 var 만 존재 , ES6 일반변수 let, 상수변수 const가 추가됨.
 
+### 변수 scope(접근 가능 범위)
+
+> global scope(전역범위)
+>
+> function scope(함수 지역 범위)
+>
+> block scope(블럭 지역 범위)
+
+> var(ES5) 키워드는 Block scope 개념이 적용되지 않고 전역변수처럼 인식됨
+
 ### 데이터 타입
 
 - 숫자
@@ -240,3 +250,68 @@ switch(expressions){
 > https://www.w3schools.com/js/js_loop_for.asp
 >
 > - 특정 횟수만큼 반복 실행
+
+## 함수(function)
+
+- 특정한 기능을 실행할 수 있는 여러 코드를묶어놓은 블럭
+- 선언(declaration) : 함수 정의(definition)
+- 호출(call) : 함수 실행
+- 재사용 가능
+
+## 배열 , 객체 , class
+
+- 데이터 , 함수의 집합
+
+### 배열(array)
+
+https://www.w3schools.com/js/js_arrays.asp
+
+> 배열 데이터가 메모리에 생성되는 구조
+>
+> - 일반 변수는 선언이 되었을 때 메모리에 값이 직접 할당되는 형태이고 , 배열 변수는 메모리에 배열 데이터가 저장된 곳의 주소값이 할당되는 형태
+> - 배열 변수가 const로 선언되었을 때 각 원소들의 변경에는 영향을 미치지 않고, 배열 자체가 변경될 때는 영향을 미치기 때문에 변경할 수 없음
+
+### 객체(object)
+
+> 프로그래밍 상의 데이터를 객체라는 개념으로 대상화시키는 것
+>
+> - property
+> - 객체가 가지고 있는 속성, 특성
+>
+> - method(함수)
+> - 객체의 기능, 동작
+>
+> - 객체 데이터는 name:value 한 쌍으로 구성됨.
+> - name:value 형태는 key:value 형태로도 이야기 함
+>
+> - 객체 method에서 this 키워드를 사용하면 method를 소유하고 있는 (포함하는) 객체를 가리킨다.
+
+> 내장객체
+>
+> - js에서 기본으로 가지고 있는 객체
+
+### class
+
+https://www.w3schools.com/js/js_classes.asp
+
+> 객체 데이터를 여러개 생성할 수 있도록 하는 설계도
+>
+> new 키워드를 사용하여 객체 데이터를 생성
+
+## javascript 활용
+
+### JS Event
+
+> Event는 HTML 문서내의 상태 변화에 따른 발생되는 신호
+
+> Event 종류
+>
+> Mouse Event
+>
+> - click. mouse over, scroll up/down
+>
+>   keyboard Event
+>
+> - key down(press), change
+>
+>   focus

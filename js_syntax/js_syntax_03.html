@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //함수 선언
+      function myFunction() {
+        console.log("함수선언");
+      }
+      // 함수 호출
+      myFunction();
+
+      function print1() {
+        console.log("true function");
+      }
+      function print2() {
+        console.log("false function");
+      }
+      if (3 < 5) {
+        print1();
+      } else {
+        print2();
+      }
+
+      //재사용
+      let a = 0;
+
+      function print3(msg) {
+        let b = msg;
+        console.log(b);
+      }
+      if (a > 5) {
+        print3("비교식 참");
+      } else if (a > 4) {
+        print("비교식 참");
+      } else if (a > 3) {
+        print3("비교식 참");
+      } else {
+        print3("비교식 거짓");
+      }
+
+      //매개변수
+      function sum(a, b, c, d) {
+        console.log(a + c);
+      }
+      sum(3, 5, 1, 7);
+
+      function sum1(a, b) {
+        console.log(a + b);
+      }
+      sum1(3, 4);
+
+      //return
+
+      function sum2(a, b) {
+        let s = 0;
+        s = a + b;
+        return document.write(s);
+      }
+      let total = sum2(1, 4);
+
+      let todayNumber = new Date().getDay(); //let todayNumber = 6;
+
+      //함수 선언 형태
+      function defFunc1() {}
+
+      let defFunc2 = function () {};
+
+      //화살표 함수(ES6)
+      let defFunc3 = () => {};
+
+      //익명함수 :
+      //  함수 이름 없이 정의하는 함수,
+      //  함수의 매개변수 값으로 바로 실행해야 하는 함수를
+      //  넣어줄때 익명함수 사용 가능
+      //function(){}
+    </script>
+  </head>
+  <body></body>
+</html>

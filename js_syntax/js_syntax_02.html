@@ -60,19 +60,19 @@
 
       let today = new Date().getDay();
       if (today === 0) {
-        alert("일요일");
+        day = document.write("일요일");
       } else if (today === 1) {
-        alert("월요일");
+        day = document.write("월요일");
       } else if (today === 2) {
-        alert("화요일");
+        day = document.write("화요일");
       } else if (today === 3) {
-        alert("수요일");
+        day = document.write("수요일");
       } else if (today === 4) {
-        alert("목요일");
+        day = document.write("목요일");
       } else if (today === 5) {
-        alert("금요일");
+        day = document.write("금요일");
       } else if (today === 6) {
-        alert("토요일");
+        day = document.write("토요일");
       }
 
       console.log(day);
@@ -86,12 +86,14 @@
         sum = sum + i;
         console.log(sum);
       }
-
+      document.write("<br>");
       // 구구단 1단부터 9단까지 예제
       for (let a = 2; a <= 9; a++) {
         for (let i = 1; i <= 9; i++) {
-          console.log(a + " × " + i + " = " + a * i);
+          document.write(a + " × " + i + " = " + a * i);
+          document.write("<br>");
         }
+        document.write("<br>");
       }
 
       // condition 은 true로 직접 넣어주면 무한루프 돈다.
