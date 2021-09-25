@@ -315,3 +315,132 @@ https://www.w3schools.com/js/js_classes.asp
 > - key down(press), change
 >
 >   focus
+>
+> 자동으로 발생되는 이벤트
+>
+> - load
+
+### JS Event Handler / Listener
+
+```
+  elementNode. addEventListener(이벤트, 함수);
+```
+
+> 함수를 따로 정의해서 매게변수로 넣어주는 경우 함수 이름만 넣어줌(괄호 생략)
+>
+> 함수를 따로 정의하지 않고 익명함수로 직접 넣어주는 경우도 있음
+
+### JS Form
+
+https://www.w3schools.com/html/html_form_input_types.asp
+
+https://www.w3schools.com/html/html_form_elements.asp
+
+> 폼 요소는 서버측에 데이터를 전달할 때 사용자의 입력을 받을 수 있는 요소
+
+```
+<input type="text" />
+<input type="password" />
+<input type="radio" />
+
+<select>
+<option>HTML</option>
+<option>CSS</option>
+</select>
+
+<button type="button">save</button>
+
+```
+
+> input 버튼과 button태그는 기능상의 차이는 없음
+>
+> HTML 요소 구성의 차이
+>
+> - input은 빈 요소이고 button태그는 시작/종료 태그로 구성됨
+> - input button은 콘텐츠 구성시 value attribut 를 사용하기 때문에 제약이 있음
+> - button 태그는 콘텐츠 구성시 제약이 없음
+
+### JS 작성박식
+
+> HTML , CSS와 Javascript가 같이 사용될 때 3가지가 제대로 적용되기 위한 작성
+
+> External : JS 파일을 따로 생성 - 외부 파일
+> Internal : HTML 문서내에 script 태그를 사용하여 코드를 작성
+> Inline : HTML Element에 Javascript 코드를 직접 작성
+
+> External, Internal 방식으로 코딩을 하는 경우에는 Javascript의 로딩 시점은 HTML 요소가 모두 로딩(랜더링)된 이후이어야 함
+> script 태그에 defer attribute를 사용하면 script 태그 위치에 상관없이 HTML이 모두 코딩된 이후에 코드를 실행할 수 있음
+>
+> defer attribute는 외부 파일을 불러올때만 적용 가능
+
+```
+ - External
+  <script src="function.js"></script>
+
+ - Internal
+  <script>
+  console.log(123);
+  </script>
+
+ - Inline
+  <button type="button" onclick="show();">버튼</button>
+```
+
+### JS DOM
+
+> DOM : document Object Model
+>
+> - MTML 요소들이 객체로 생성된 것
+> - Javascript에서 HTML 요소들을 제어하기 위해서 사용
+
+### JS DOM Access
+
+> HTML4
+
+```
+  document.getElementById('id');
+  document.getElementsByTagName('tag');
+  document.getElementsByClassName('class');
+```
+
+> JQuery
+
+```
+  $('#id')
+  $('tag')
+  $('class')
+```
+
+> HTML 5
+
+```
+document.querySelector('#id');
+document.querySelector('tag');
+document.querySelector('.class');
+document.querySelectorAll(.class);
+```
+
+### Create / Read / Update / Delete
+
+> Create
+
+```
+// HTML 요소 생성
+document.createElement()
+
+// Text 생성
+document.createTextNode()
+
+// 부모요소에 자식요소를 추가
+parentNode.appendChild(childNode)
+
+// 해당 요소에 클래스 이름 추가
+elementNode.classList.add()
+```
+
+// input type text 요소의 값을 저장하고 있는 property
+inputNode.value
+
+### JS Event Handler
+
+https://github.com/edu-ministori/frontend_08
