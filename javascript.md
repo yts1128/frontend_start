@@ -444,3 +444,7 @@ inputNode.value
 ### JS Event Handler
 
 https://github.com/edu-ministori/frontend_08
+
+### 강사님 codsandbox link
+
+https://codesandbox.io/s/itac-08-0ye9v?file=/js_ex/js_ex_02.html:0-5029

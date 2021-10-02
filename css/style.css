@@ -159,12 +159,30 @@ table {
 .gnb-link:hover {
   color: #10c9c3;
 }
+
+.hamburger,
+.close {
+  display: none;
+}
+
 .section01 {
   min-width: 1360px;
   height: 320px;
   background: #f6f6f6;
   padding-top: 100px;
   box-sizing: border-box;
+  position: relative;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.slide.active {
+  opacity: 1;
 }
 .section-heading {
   text-align: center;
@@ -200,7 +218,6 @@ table {
 }
 
 .figure-img {
-  width: 340px;
   height: 300px;
 }
 
@@ -266,35 +283,118 @@ table {
 /* smart phone */
 @media screen and (max-width: 767px) {
   .header {
-    padding: 38px 30px 0;
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px 0;
+    position: fixed;
+    top: 0;
+    background: #fff;
   }
+
+  .logo {
+    position: relative;
+    z-index: 990;
+  }
+
+  .gnb {
+    /* display: none; */
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    /* position:absolute, fixed => height 부모요소를 기준으로 변경, width 부모요소 기준으로 자동으로 채워지는 속성이 제거 */
+    height: 100%;
+    background: #ddd;
+    z-index: 900;
+    transition: all 1s;
+  }
+
+  .gnb.on {
+    /* display: block; */
+    opacity: 1;
+    left: 0;
+  }
+
+  .gnb-list {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+  }
+
   .gnb-item {
-    margin-left: 10px;
+    margin-left: 0;
+    margin-top: 20px;
   }
+
+  .gnb-link {
+    font-size: 45px;
+  }
+
+  .hamburger {
+    display: block;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    background: none;
+  }
+
+  .hamburger img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .close {
+    display: none;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border: none;
+    background: none;
+    z-index: 990;
+  }
+
+  .close.on {
+    display: block;
+  }
+
+  .close img {
+    width: 100%;
+    height: 100%;
+  }
+
   .section01 {
     padding-top: 80px;
+    margin-top: 50px;
   }
+
   .section-heading {
     font-size: 22px;
   }
+
   .section-paragraph {
     padding: 0 20px;
   }
   .group {
     width: 340px;
   }
+
   .footer-wrap {
     display: block;
     padding: 0 20px;
   }
+
   .footer-sitemap {
     margin-top: 40px;
   }
+
   .footer-sitemap-list {
     flex-direction: row;
     width: auto;
     height: auto;
   }
+
   .footer-sitemap-item {
     margin: 0 5px 5px 0;
   }
